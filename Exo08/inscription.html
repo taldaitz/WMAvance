@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inscription</title>
+
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/inscription.css">
 </head>
 <body>
 
-    <h1>Inscription</h1>
+    <h1 id="titrePrincipal">Inscription</h1>
 
     <form method="POST">
 
@@ -23,12 +26,12 @@
 
             <p>
                 <label>Prénom : </label>
-                <input name="prenom" placeholder="Saisir votre prénom" required>
+                <input name="prenom" id="prenom" onchange="afficherNomPrenom();" placeholder="Saisir votre prénom" required>
             </p>
 
             <p>
                 <label>Nom : </label>
-                <input name="nom" id="nom" required>
+                <input name="nom" id="nom" onchange="afficherNomPrenom();" required>
             </p>
 
             <p>
@@ -62,7 +65,10 @@
 
         </fieldset>
 
-        <fieldset>
+        <p class="boutons">
+            <button onclick="afficherZone(this, 'zoneContact', '120px');">Afficher Contact</button>
+        </p>
+        <fieldset id="zoneContact">
             <legend>Contact</legend>
 
             <p>
@@ -90,7 +96,10 @@
             </p>
         </fieldset>
 
-        <fieldset>
+        <p class="boutons">
+            <button onclick="afficherZone(this, 'zonePref', '250px');">Afficher Préférences</button>
+        </p>
+        <fieldset id="zonePref">
             <legend>Préférences</legend>
 
             <p>
@@ -108,7 +117,7 @@
             </p>
         </fieldset>
 
-        <p>
+        <p class="boutons">
             <input type="reset" value="R.A.Z.">
             <button type="submit">S'inscrire</button>
         </p>
