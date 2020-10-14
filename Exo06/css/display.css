@@ -1,0 +1,26 @@
+div, span {
+    width: 200px;
+    height: 200px;
+    border: 3px solid black;
+}
+
+div {
+    background-color: sandybrown;
+    display: inline-block;
+}
+
+span {
+    background-color: thistle;
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+#premiereLigne {
+    width: auto;
+    height: auto;
+    border: 5px solid red;
+    background-color: unset;
+    display: block;
+    text-align: center;
+}

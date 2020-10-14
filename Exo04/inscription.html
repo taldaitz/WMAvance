@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+</head>
+<body>
+
+    <h1>Inscription</h1>
+
+    <form method="POST">
+
+        <fieldset>
+            <legend>Identité</legend>
+
+            <p>
+                <label>Civilité : </label>
+                <input type="radio" name="civilite" value="Mr"> Monsieur
+                <input type="radio" name="civilite" value="Mme"> Madame
+                <input type="radio" name="civilite" value="Dr"> Docteur
+            </p>
+
+            <p>
+                <label>Prénom : </label>
+                <input name="prenom" placeholder="Saisir votre prénom" required>
+            </p>
+
+            <p>
+                <label>Nom : </label>
+                <input name="nom" id="nom" required>
+            </p>
+
+            <p>
+                <label>Date de naissance : </label>
+                <input name="dateNaissance" type="date">
+            </p>
+
+            <p>
+                <label>Pays de naissance : </label>
+                <select name="pays">
+                    <option>France</option>
+                    <option>Allemagne</option>
+                    <option>Belgique</option>
+                    <option>Espagne</option>
+                    <option>Suisse</option>
+                </select>
+            </p>
+
+            <p>
+                <label>Ville : </label>
+                <input name="ville" list="villeList">
+                <datalist id="villeList">
+                    <option>Paris</option>
+                    <option>Lyon</option>
+                    <option>Bordeaux</option>
+                    <option>Nantes</option>
+                    <option>Marseille</option>
+                    <option>Mulhouse</option>
+                </datalist>
+            </p>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Contact</legend>
+
+            <p>
+                <label>Email : </label>
+                <input name="email" type="email">
+            </p>
+
+            <p>
+                <label>Téléphone : </label>
+                <input name="tel" type="tel">
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Sécurité</legend>
+
+            <p>
+                <label>Login : </label>
+                <input name="login" type="text" required>
+            </p>
+
+            <p>
+                <label>Mot de passe : </label>
+                <input name="mdp" type="password" required>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Préférences</legend>
+
+            <p>
+                <label>Commentaires : </label>
+                <textarea name="comments" cols="50" rows="10" 
+                placeholder="Saisir un commentaires à transmettre au Webmaster"></textarea>
+            </p>
+
+            <p>
+                <label>Centre d'interets : </label>
+                <input type="checkbox" name="interets" value="cinema"> Cinéma
+                <input type="checkbox" name="interets" value="musique"> Musique
+                <input type="checkbox" name="interets" value="sport"> Sport
+                <input type="checkbox" name="interets" value="livres"> Livres
+            </p>
+        </fieldset>
+
+        <p>
+            <input type="reset" value="R.A.Z.">
+            <button type="submit">S'inscrire</button>
+        </p>
+
+    </form>
+    
+</body>
+</html>

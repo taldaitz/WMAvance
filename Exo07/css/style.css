@@ -1,0 +1,122 @@
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h1 {
+    color: crimson;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+}
+
+cite {
+    color: darkgrey;
+}
+
+nav, main {
+    border: 1px solid black;
+}
+
+nav {
+    border: 1px solid black;
+    background-color: dodgerblue;
+    width: 300px;
+    position: fixed;
+    overflow: hidden;
+
+    animation-name: apparition;
+    animation-duration: 1s;
+}
+
+@keyframes apparition {
+    0% {
+        width: 20px;
+        height: 20px;
+        left: -60px;
+    }
+    30% {
+        width: 20px;
+        height: 20px;
+        left: 8px;
+    }
+    100% {
+        width: 300px;
+        height: 122px;
+    }
+}
+
+
+
+nav a {
+    color: black;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding-inline-start: unset;
+}
+
+li {
+    padding-left: 30px;
+}
+
+nav li:hover, nav li:hover a {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+
+main {
+    min-width: 400px;
+    max-width: 1000px;
+    padding: 40px;
+    margin: auto;
+    text-align: justify;
+}
+
+main h2 {
+    color: orange;
+}
+
+main img {
+    width: 200px;
+    transition: width 1s;
+}
+main img:hover {
+    width: 400px;
+}
+
+section {
+    transition: background-color 2s;
+}
+
+section:hover {
+    background-color: lightgray;
+}
+
+
+
+footer {
+    text-align: center;
+}
+
+footer a {
+    color: green;
+    font-weight: bold;
+}
+
+.miparagraphe {
+    display: inline-block;
+    max-width: 400px;
+    vertical-align: top;
+    margin: 0px 25px;
+}
+
+#gallerieSection h2 {
+    color: gold;
+}
+
+section:hover h2, #gallerieSection:hover h2 {
+    color: black;
+}
