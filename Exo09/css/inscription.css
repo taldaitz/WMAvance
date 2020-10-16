@@ -1,0 +1,16 @@
+fieldset, h1, .boutons {
+    max-width: 800px;
+    margin: auto;
+}
+
+label {
+    width: 150px;
+    display: inline-block;
+}
+
+#zoneContact, #zonePref {
+    height: 2px;
+    overflow: hidden;
+
+    transition: height 1s;
+}

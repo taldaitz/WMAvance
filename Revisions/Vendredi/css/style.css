@@ -1,0 +1,33 @@
+div {
+    display: inline-block;
+    width: 250px;
+    height: 250px;
+    border: 2px solid black;
+    text-align: center;
+    background-color: lightpink;
+}
+
+main {
+    text-align: center;
+}
+
+.articleAffiche {
+    max-width: 1000px;
+    width: unset;
+    height: unset;
+    text-align: justify;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    div {
+        display: block;
+        width: unset;
+        height: 30px;
+    }
+
+    .articleAffiche {
+        background-color: turquoise;
+    }
+}

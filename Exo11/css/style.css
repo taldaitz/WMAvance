@@ -1,0 +1,18 @@
+button {
+    margin: 0 30px;
+}
+
+main {
+    width: 800px;
+    margin: auto;
+    text-align: justify;
+}
+
+.oldArticle {
+    color: lightgrey;
+}
+
+.article {
+    margin: 50px 10px;
+    display: none;
+}
